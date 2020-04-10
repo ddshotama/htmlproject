@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-image:url("office-581127_1280.jpg");
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FF4136;
+}
+
+div {
+  background-color: lightgrey;
+  width: 900px;
+
+  border: 5px solid black;
+  padding: 30px;
+  margin: 20px;
+}
+#new
+{
+  background-color: lightgrey;
+  width: 900px;
+
+  border: 5px solid black;
+  padding: 30px;
+  margin: 20px;
+  font-family:Times New Roman;
+
+}
+b{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin:20px 60px;
+}
+
+b:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+#rightbox{ 
+                float:right; 
+                background:#3D9970; 
+                width:15%; 
+                height:180px; 
+            }
+ #bottom { 
+                position:absolute;                  
+                bottom:0; 
+                width:15%; 
+                height:180px;                         
+                right:0;     
+</style>
+</head>
+<body>
+<h1 style="font-family:'Segoe UI',Arial,sans-serif;color:#01FF70">A sTuDent BLog</h1>
+<ul>
+ 
+  <li><a class="active" href="file:///C:/Users/DIVYENDU%20JHA/Desktop/aman%20roommate/login.html#">Login</a></li>
+  <li><a href="#news">Contact</a></li>
+  <li><a href="#contact">Portfolio</a></li>
+  <li><a href="#about">Home</a></li>
+  <li style="float:left;"><a href="">Aman's blog</a></li>
+</ul>
+<div id = "rightbox"> 
+                <h2>Trending Articles:</h2> 
+                <pre>
+   1. Coronavirus: A Pandemic
+
+   2. Downfall of Economy
+
+   3. Unbalanced Nature
+</pre>
+
+            </div> 
+
+<div>
+<p><h1>Coronavirus disease </h><br>Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
+<span id="dots">...</span><span id="more">The disease causes respiratory illness (like the flu) with symptoms 
+such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your 
+hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.<br>
+HOW IT SPREADS
+Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also 
+spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth.
+   </span></p>
+
+
+<button onclick="myFunction()" id="myBtn" style="float:right;">Read more</button></div><br>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<div id="new">
+<p><h1>Machine Learning</h><br>Machine learning is a subfield of artificial intelligence (AI). 
+<span id="dot">...</span><span id="moreT"> Because of this, machine learning facilitates computers in building models 
+from sample data in order to automate decision-making processes based on data inputs. Any technology user today has 
+benefitted from machine learning.
+   </span></p>
+
+
+<button onclick="mFunction()" id="Btn" style="float:right;">Read more</button></div>
+<script>
+function mFunction() {
+  var dot = document.getElementById("dot");
+  var Text = document.getElementById("moreT");
+  var btn = document.getElementById("Btn");
+
+  if (dot.style.display === "none") {
+    dot.style.display = "inline";
+    btn.innerHTML = "Read more"; 
+    moreT.style.display = "none";
+  } else {
+    dot.style.display = "none";
+    btn.innerHTML = "Read less"; 
+    moreT.style.display = "inline";
+  }
+}
+</script>
+<div id = "bottom"> 
+                <h2>Become a Supporter</h2> 
+                <pre>
+   <a href="file:///C:/Users/DIVYENDU%20JHA/Desktop/aman%20roommate/NewArticle.html">Write an article</a>
+
+   Donate
+
+   Create own blog
+</pre>
+
+            </div> 
+<br><br><br>
+<b href="#" class="previous">&laquo; Previous</b>
+<b href="#" class="next">&raquo; Next </b>
+
+
+
+</body>
+</html>
